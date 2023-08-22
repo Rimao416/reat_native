@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import React, { Component } from "react";
 
 const ComponentsScreen = () => {
@@ -9,10 +9,10 @@ const ComponentsScreen = () => {
   );
 };
 
-// const styles = StyleSheet.create({
-//   textStyle: {
-//     fontSize: 30,
-//   },
-// });
+const styles = StyleSheet.create({
+  textStyle: {
+    fontSize: 30,
+  },
+});
 
 export default ComponentsScreen;

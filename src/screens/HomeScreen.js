@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
-
+import { useNavigation } from "@react-navigation/native";
 const HomeScreen = () => {
+  const navigation = useNavigation();
   const myName = "Omari";
   const handlePress = () => {
-    console.log("Le bouton a été appuyé !");
+    navigation.navigate("List");
   };
   return (
     <View>

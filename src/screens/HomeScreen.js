@@ -5,14 +5,14 @@ const HomeScreen = () => {
   const navigation = useNavigation();
   const myName = "Omari";
   const handlePress = () => {
-    navigation.navigate("List");
+    navigation.navigate("Image");
   };
   return (
     <View>
       <Text style={styles.textStyle}>Getting Started with react native</Text>
       <Button onPress={() => console.log(myName)} title="Click Me"></Button>
       <TouchableOpacity onPress={handlePress}>
-        <Text>Go to The List demo</Text>
+        <Text style={styles.secondStyle}>Go to The Image demo</Text>
       </TouchableOpacity>
     </View>
   );
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
   },
   secondStyle: {
     fontSize: 20,
+    color: "red",
   },
 });
 

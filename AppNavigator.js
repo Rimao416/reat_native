@@ -7,6 +7,8 @@ import {
 import ComponentsScreen from "./src/screens/ComponentsScreen";
 import { StyleSheet, View, Text } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen";
+import ImageScreen from "./src/screens/ImageScreen";
+ImageScreen;
 
 const Stack = createStackNavigator();
 const AppNavigator = () => {
@@ -21,6 +23,11 @@ const AppNavigator = () => {
         name="List"
         options={{ headerTitle: "Liste" }}
         component={ComponentsScreen}
+      />
+      <Stack.Screen
+        name="Image"
+        options={{ headerTitle: "Image" }}
+        component={ImageScreen}
       />
     </Stack.Navigator>
   );

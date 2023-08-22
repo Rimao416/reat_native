@@ -5,15 +5,17 @@ const HomeScreen = () => {
   const navigation = useNavigation();
   const myName = "Omari";
   const handlePress = () => {
-    navigation.navigate("Image");
+    // navigation.navigate("Image");
+    navigation.navigate("Square");
   };
   return (
     <View>
       <Text style={styles.textStyle}>Getting Started with react native</Text>
       <Button onPress={() => console.log(myName)} title="Click Me"></Button>
       <TouchableOpacity onPress={handlePress}>
-        <Text style={styles.secondStyle}>Go to The Image demo</Text>
+        <Text style={styles.secondStyle}>Go to The Square demo</Text>
       </TouchableOpacity>
+     
     </View>
   );
 };

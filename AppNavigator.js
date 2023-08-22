@@ -8,7 +8,11 @@ import ComponentsScreen from "./src/screens/ComponentsScreen";
 import { StyleSheet, View, Text } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen";
 import ImageScreen from "./src/screens/ImageScreen";
-ImageScreen;
+import CounterScreen from "./src/screens/CounterScreen";
+import ColorScreen from "./src/screens/ColorScreen";
+import SquareScreen from "./src/screens/SquareScreen";
+// ImageScreen;
+// CounterScreen
 
 const Stack = createStackNavigator();
 const AppNavigator = () => {
@@ -28,6 +32,21 @@ const AppNavigator = () => {
         name="Image"
         options={{ headerTitle: "Image" }}
         component={ImageScreen}
+      />
+      <Stack.Screen
+        name="Counter"
+        options={{ headerTitle: "Counter" }}
+        component={CounterScreen}
+      />
+      <Stack.Screen
+        name="Color"
+        options={{ headerTitle: "Color" }}
+        component={ColorScreen}
+      />
+      <Stack.Screen
+        name="Square"
+        options={{ headerTitle: "Square" }}
+        component={SquareScreen}
       />
     </Stack.Navigator>
   );
